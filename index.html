@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="toolbar">
+        <!-- Разметка переключателя темы -->
+        <div class="theme-switch">
+            <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+                <use href="./images/sprite.svg#sun"></use>
+            </svg>
+    
+            <div class="theme-switch__control">
+                <input class="theme-switch__toggle" type="checkbox" name="theme" id="theme-switch-toggle"
+                    aria-label="Переключить между тёмной и светлой темой" />
+                <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle">
+                </label>
+                <div aria-hidden="true" class="theme-switch__marker"></div>
+            </div>
+    
+            <svg class="theme-switch__icon" aria-label="Иконка луны">
+                <use href="./images/sprite.svg#moon"></use>
+            </svg>
+        </div>
+    </div>
+
+    <h1>Die Öffnung des AiZ findet in</h1>
+    <div class="timer" id="timer-1">
+        <div class="field">
+            <span class="value" data-value="days">00</span>
+            <span class="label">Tagen</span>
+        </div>
+    
+        <div class="field">
+            <span class="value" data-value="hours">00</span>
+            <span class="label">Stunden</span>
+        </div>
+    
+        <div class="field">
+            <span class="value" data-value="mins">00</span>
+            <span class="label">Minuten</span>
+        </div>
+    
+        <div class="field">
+            <span class="value" data-value="secs">00</span>
+            <span class="label">Sekunden</span>
+        </div>
+    </div>
+    <h2>
+        STATT
+    </h2>
+   <script src="./js/timer.js"></script> 
+</body>
+</html>
